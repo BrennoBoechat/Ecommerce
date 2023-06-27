@@ -8,17 +8,20 @@ import Image from 'next/image'
 function Header() {
   return (
     <HeaderContainer>
-            <h1>Cactus Company</h1>
+      <div className='wrap'>
+              <h1>Cactus Company</h1>
 
-            <div className='input'>
-              <input placeholder='Buscar'></input>
-              <button> <Image alt='buscar' src={SearchIcon}/> </button>
-            </div>
+        <div className='input'>
+          <input placeholder='Buscar'></input>
+          <button> <Image alt='buscar' src={SearchIcon}/> </button>
+        </div>
 
-            <div className='header-images'>
-                <Image alt='conta' src={ProfileIcon}/>
-                <Image alt='carrinho' src={Cart}/>
-            </div>
+        <div className='header-images'>
+            <Image alt='conta' src={ProfileIcon}/>
+            <Image alt='carrinho' src={Cart}/>
+        </div>
+
+      </div>
     </HeaderContainer>
   )
 }

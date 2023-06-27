@@ -6,7 +6,14 @@ export const HeaderContainer = styled.div `
     width: 100%;
     align-items: center;
     height: 6.6rem;
-    justify-content: space-evenly;
+    justify-content: center;
+
+    .wrap {
+        max-width: 1400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 
         h1 {
             color: white;
@@ -32,6 +39,10 @@ export const HeaderContainer = styled.div `
                 border-radius: 15px;
                 background-color: white;
                 padding: 5px;
+
+                :hover {
+                    opacity: 50%;
+                }
             }
 
         }
