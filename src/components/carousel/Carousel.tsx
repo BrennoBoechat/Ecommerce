@@ -11,16 +11,10 @@ function Carousel() {
     { url: "https://img.ltwebstatic.com/images3_ccc/2023/06/16/168692713876312a737e914548e1bc1a24a5076a1b.webp", title: "forest" },
     { url: "https://img.ltwebstatic.com/images3_ccc/2023/06/26/168776034301914454c2a28307b89f3f514712b3e2_thumbnail_1542x.webp", title: "city" },
   ];
-  
-  const containerStyles = {
-
-  }
 
   return (
     <BannerContainer>
-        <div>
           <ImageSlider slides={slides}/>
-        </div>
     </BannerContainer>
   )
 }

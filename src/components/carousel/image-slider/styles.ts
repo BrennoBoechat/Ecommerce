@@ -5,7 +5,8 @@ interface SlideProps {
 }
 
 export const SlideStyles = styled.div<SlideProps>`
-    width: 70vw;
+    width: 100%;
+    max-width: 1400px;
     margin-top: 30px;
     height: 500px;
     border-radius: 10px;

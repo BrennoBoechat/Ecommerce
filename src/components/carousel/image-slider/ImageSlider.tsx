@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Left from "../../../assets/left.svg"
 import Right from "../../../assets/right.svg"
 import { DotStyle, DotsContainerStyles, LeftArrowStyles, RightArrowStyles, SlideStyles, SliderStyles } from "./styles";
@@ -15,6 +15,7 @@ interface Slides {
 }
 
 const ImageSlider = ({slides}: Slides) => {
+    const timeRef = useRef<Promise<number> | null>(null);
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -30,11 +31,13 @@ const ImageSlider = ({slides}: Slides) => {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
+        return newIndex
     };
 
     const goToSlide = (slideIndex: number) => {
         setCurrentIndex(slideIndex);
     };
+
 
     return (
         <SliderStyles>
