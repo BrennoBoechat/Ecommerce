@@ -16,6 +16,7 @@ export const CategoriesContainer = styled.div `
             display: flex;
             margin-top: 50px;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             button {
                 border: none;
