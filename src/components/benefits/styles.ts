@@ -10,6 +10,13 @@ export const BenefitsContainer = styled.div`
         width: 100%;
         display: flex;
         justify-content: space-around;
+
+        @media (max-width : 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
 
     .benefits-cards {

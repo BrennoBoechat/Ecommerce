@@ -3,26 +3,38 @@ import styled from "styled-components"
 export const FooterContainer = styled.div`
     display: flex;
     width: 100%;
-    height: 25vh;
+    height: 100%;
     background-color: #E0164F;
     margin-top: 50px;
 
     .wrap {
         display: flex;
         width: 100%;
-        max-width: 1400px;
+        max-width: 1136.060px;
         margin: 0 auto;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
 
         .newsletter {
             display: flex;
             align-items: center;
-            gap: 25px;
+            margin-top: 20px;
+            gap: 20px;
             height: 10vh;
 
+            @media (max-width : 768px) {
+                flex-direction: column;
+        }
+
                 h1 {
-                color: white;
-                font-size: 1.3rem;
+                    color: white;
+                    font-size: 1.3rem;
+
+                    @media (max-width : 768px) {
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
 
                 p {
@@ -31,8 +43,8 @@ export const FooterContainer = styled.div`
                 }
 
                 input {
-                    width: 15vw;
-                    height: 4vh;
+                    min-width: 300px;
+                    height: 3.90vh;
                     background: transparent;
                     border: none;
                     border-bottom: 1px solid white;
@@ -50,6 +62,46 @@ export const FooterContainer = styled.div`
                     font-size: 20px
                 }
 
+            }
+
+            .itens {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+
+                @media (max-width : 768px) {
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 200px;
+        }
+
+                p {
+                    color: white;
+                }
+
+                .social-midia {
+                    display: flex;
+                    gap: 10px;
+
+                    button {
+                        border: none;
+                        background: transparent;
+                    }
+                }
+
+                .pay {
+                    display: flex;
+                    gap: 10px;
+
+                    .payment {
+                    width: 50px;
+                    height: 30px;
+                    }
+                }
             }
     }
 `

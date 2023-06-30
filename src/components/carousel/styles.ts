@@ -4,6 +4,10 @@ export const BannerContainer = styled.div `
     max-width: 1400px;
     margin: 0 auto;
 
+        @media (max-width : 768px) {
+            padding: 15px;
+        }
+
     .containerStyles {
         width: 500px;
         height: 280px;
