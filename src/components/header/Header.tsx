@@ -16,10 +16,12 @@ function Header() {
           <button> <Image alt='buscar' src={SearchIcon}/> </button>
         </div>
 
+        <ul>
         <div className='header-images'>
-            <Image alt='conta' src={ProfileIcon}/>
-            <Image alt='carrinho' src={Cart}/>
+          <button><Image alt='conta' src={ProfileIcon}/></button>
+          <button><Image alt='carrinho' src={Cart}/></button>
         </div>
+        </ul>
 
       </div>
     </HeaderContainer>

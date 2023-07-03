@@ -15,7 +15,6 @@ export const FooterContainer = styled.div`
         align-items: center;
         flex-direction: column;
 
-
         .newsletter {
             display: flex;
             align-items: center;
@@ -23,13 +22,21 @@ export const FooterContainer = styled.div`
             gap: 20px;
             height: 10vh;
 
-            @media (max-width : 768px) {
-                flex-direction: column;
-        }
+                @media (max-width : 1024px) {
+                        max-width: 984px;
+                }
+
+                @media (max-width : 768px) {
+                    flex-direction: column;
+                }
 
                 h1 {
                     color: white;
                     font-size: 1.3rem;
+
+                    @media (max-width : 1024px) {
+                        font-size: 0.8rem;
+                    }
 
                     @media (max-width : 768px) {
                         display: flex;
@@ -39,7 +46,17 @@ export const FooterContainer = styled.div`
 
                 p {
                     color: white;
-                    font-size: 0.8rem;
+                    font-size: 0.7rem;
+
+                    @media (max-width : 1024px) {
+                        font-size: 0.7rem;
+                        justify-content: center;
+                    }
+
+                    @media (max-width : 768px) {
+                        font-size: 0.7rem;
+                        justify-content: center;
+                    }
                 }
 
                 input {
@@ -55,11 +72,17 @@ export const FooterContainer = styled.div`
                 }
 
                 button {
-                    background: white;
-                    border: none;
-                    width: 80px;
-                    height: 30px;
-                    font-size: 20px
+                    width: 120px;
+                    border: 0;
+                    position: relative;
+                    padding: 7px 0;
+                    outline: 0;
+                    background-color: white;
+                    font: 600 12px/15px "Source Sans Pro",sans-serif;
+                    color: black;
+                    text-align: center;
+                    text-transform: uppercase;
+                    cursor: pointer;
                 }
 
             }
@@ -73,14 +96,22 @@ export const FooterContainer = styled.div`
                 margin-top: 30px;
                 margin-bottom: 30px;
 
+                @media (max-width : 1024px) {
+                        max-width: 984px;
+                }
+
                 @media (max-width : 768px) {
                 flex-direction: column;
                 gap: 30px;
                 margin-top: 200px;
-        }
+                }
 
                 p {
                     color: white;
+
+                    @media (max-width : 768px) {
+                        font-size: 0.8rem;
+                    }
                 }
 
                 .social-midia {

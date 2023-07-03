@@ -11,6 +11,13 @@ export const BenefitsContainer = styled.div`
         display: flex;
         justify-content: space-around;
 
+        @media (max-width : 1024px) {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            gap: 20px;
+        }
+
         @media (max-width : 768px) {
             display: flex;
             flex-direction: column;

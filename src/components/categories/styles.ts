@@ -13,6 +13,12 @@ export const CategoriesContainer = styled.div `
         flex-direction: column;
 
         h1 {
+
+            @media (max-width : 1024px) {
+                justify-content: center;
+                display: flex;
+            }
+
             @media (max-width : 768px) {
                 justify-content: center;
                 display: flex;
@@ -25,11 +31,15 @@ export const CategoriesContainer = styled.div `
             flex-wrap: wrap;
             margin-top: 15px;
 
+            @media (max-width : 1024px) {
+                flex-direction: column;
+            }
+
             @media (max-width : 768px) {
                 justify-content: center;
                 align-items: center;
                 display: flex;
-        }
+            }
 
             button {
                 border: none;
@@ -42,14 +52,19 @@ export const CategoriesContainer = styled.div `
 export const StyledImageWrapper = styled.div`
 
     .image-style {
-        width: 400px;
+        max-width: 400px;
         height: 400px;
         object-fit: cover;
         filter: grayscale(100%);
-        transition:filter 600ms ease;
+        width: 100%;
+        transition: filter 600ms ease;
         border-radius: 25px; 
 
         @media (max-width : 768px) {
+            padding: 15px;
+        }
+
+        @media (max-width : 1024px) {
             padding: 15px;
         }
     }

@@ -11,6 +11,7 @@ export const SlideStyles = styled.div<SlideProps>`
     height: 500px;
     border-radius: 10px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-image: ${({backgroundImage})=>`url(${backgroundImage})`};
 `
