@@ -1,6 +1,9 @@
+'use client';
 import { Inter } from 'next/font/google'
 import "../global/global.css"
 import StyledComponentsRegistry from '@/lib/registry'
+import Header from '@/components/header/Header'
+import Footer from '@/components/footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 

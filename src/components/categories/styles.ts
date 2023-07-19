@@ -58,7 +58,8 @@ export const StyledImageWrapper = styled.div`
         filter: grayscale(100%);
         width: 100%;
         transition: filter 600ms ease;
-        border-radius: 25px; 
+        border-radius: 25px;
+        
 
         @media (max-width : 768px) {
             padding: 15px;

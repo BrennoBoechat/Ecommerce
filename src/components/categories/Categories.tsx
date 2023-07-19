@@ -14,7 +14,7 @@ function Categories() {
                 <div className='categories'>
                     <button>
                         <StyledImageWrapper>
-                            <Image className='image-style' src={Homem} alt="Descrição da imagem"/>
+                            <Image className='image-style' src={Homem} alt="modelo-homem"/>
                         </StyledImageWrapper>
                     </button>
                     <button>

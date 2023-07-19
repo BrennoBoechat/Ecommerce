@@ -15,39 +15,9 @@ export const HeaderContainer = styled.div `
         align-items: center;
         justify-content: space-between;
 
-            @media (max-width : 1024px) {
-                justify-content: space-between;
-                max-width: 984px;
-            } 
+        .logo {
 
-            @media (max-width : 768px) {
-                    justify-content: space-between;
-                    max-width: 738px;
-            }
-
-            @media (max-width : 425px) {
-                justify-content: space-between;
-                max-width: 395px;
-            } 
-
-            @media (max-width : 375px) {
-                justify-content: space-between;
-                max-width: 345px;
-            }
-
-            @media (max-width : 425px) {
-                justify-content: space-between;
-                max-width: 395px;
-            } 
-            
-            @media (max-width : 320px) {
-                justify-content: space-between;
-                max-width: 290px;
-            } 
-            
-    }
-
-        h1 {
+            h1 {
             color: white;
             font-size: 1.8rem;
 
@@ -59,6 +29,9 @@ export const HeaderContainer = styled.div `
                 font-size: 1rem;
             }  
         }
+
+    }
+}
 
         .input {
             display: flex;
