@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Homem from "../../assets/modelo-homem.jpg"
 import Mulher from "../../assets/modelo-mulher.jpg"
 import Joias from "../../assets/joias.jpg"
+import Link from 'next/link'
 
 function Categories() {
     return (
@@ -14,7 +15,7 @@ function Categories() {
                 <div className='categories'>
                     <button>
                         <StyledImageWrapper>
-                            <Image className='image-style' src={Homem} alt="modelo-homem"/>
+                            <Link href="/male"><Image className='image-style' src={Homem} alt="modelo-homem"/></Link>
                         </StyledImageWrapper>
                     </button>
                     <button>
