@@ -2,48 +2,44 @@
 import { BASE_URL } from '@/constants/urls';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import ProductCard from '@/components/product-card/ProductCard';
+import Card from '@/components/card/Card';
 
 function male() {
 
   interface Product {
-    id: number;
-    name: string;
-    title: string;
+    title: string
+    image: string;
   }
 
-  const [menproducts, setMenProducts] = useState<Product[]>([]);
-  
-  const ProcessedProducts = menproducts.map(item => ({ ...item, modificado: true }));
+  interface MenProductsType {
+    title: string,
+    image: string,
+    price: number,
+  }
 
-
-  useEffect(() => {
-    axios
-      .get(`${BASE_URL}/products/category/men's clothing`)
-      .then((res) => {
-        setMenProducts(res.data);
-      })
-      .catch((err) => {
-        console.log(err.message)
-      });
-  }, [setMenProducts])
-
-  const Filter = ProcessedProducts.map((men)=>{
-    return (
-      <div>
-        {men.title}
-      </div>
-    )
-  })
+  const [menproducts, setMenProducts] = useState<MenProductsType[]>([]);
 
   console.log(menproducts)
 
-  return (
-    <div>
-      {Filter}
-      <ProductCard/>
-    </div>
-  )
-}
+    useEffect(() => {
+      axios
+        .get(`${BASE_URL}/products/category/men's clothing`)
+        .then((res) => {
+          setMenProducts(res.data);
+        })
+        .catch((err) => {
+          console.log(err.message)
+        });
+    }, [setMenProducts])
+    
+
+    return (
+      <div>
+        <Card
+        menproducts = {menproducts}
+        />
+      </div>
+    )
+  }
 
 export default male
