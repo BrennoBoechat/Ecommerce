@@ -15,17 +15,17 @@ function Categories() {
                 <div className='categories'>
                     <button>
                         <StyledImageWrapper>
-                            <Link href="/male"><Image className='image-style' src={Homem} alt="modelo-homem"/></Link>
+                            <Link href="/men"><Image className='image-style' src={Homem} alt="modelo-homem"/></Link>
                         </StyledImageWrapper>
                     </button>
                     <button>
                         <StyledImageWrapper>
-                            <Image className='image-style' src={Mulher} alt='modelo-mulher'/>
+                            <Link href="/woman"><Image className='image-style' src={Mulher} alt='modelo-mulher'/></Link>
                         </StyledImageWrapper>
                     </button>
                     <button>
                         <StyledImageWrapper>
-                            <Image className='image-style' src={Joias} alt='joias'/>
+                            <Link href="/jewelery"><Image className='image-style' src={Joias} alt='joias'/></Link>
                         </StyledImageWrapper>
                     </button>
                 </div>

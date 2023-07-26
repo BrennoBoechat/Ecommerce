@@ -19,11 +19,13 @@ function Card({menproducts} : MenProductsProps) {
 const Filter = menproducts.map((men : CardProps)=>{
     return (
         <CardContainer>
-            <div className='card'>
-                <Image height={200} width={200} alt={men.title} src={men.image}/>
-                <h1>{men.title}</h1>
-                <p>{men.price}</p>
-            </div>
+                <button>
+                    <div className='image'>
+                        <Image height={300} width={300} alt={men.title} src={men.image}/>
+                    </div>
+                    <h1>{men.title}</h1>
+                    <h2>R$ {men.price}</h2>
+                </button>
         </CardContainer>
         )
     })

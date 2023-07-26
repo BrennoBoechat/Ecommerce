@@ -2,9 +2,9 @@
 import { BASE_URL } from '@/constants/urls';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import Card from '@/components/card/Card';
+import MenCard from '@/components/men-card/MenCard';
 
-function male() {
+function men() {
 
   interface Product {
     title: string
@@ -35,11 +35,11 @@ function male() {
 
     return (
       <div>
-        <Card
+        <MenCard
         menproducts = {menproducts}
         />
       </div>
     )
   }
 
-export default male
+export default men
