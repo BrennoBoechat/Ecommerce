@@ -6,7 +6,7 @@ export const FooterContainer = styled.div`
     height: 100%;
     background-color: #E0164F;
     margin-top: 50px;
-
+    
     .wrap {
         display: flex;
         width: 100%;

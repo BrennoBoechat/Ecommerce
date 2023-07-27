@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import React from 'react'
-import { CardContainer } from './styles';
+import React, { useState } from 'react'
+import { CardContainer, MainContainer } from './styles';
 
 interface CardProps {
     title: string,
@@ -14,26 +14,40 @@ interface MenProductsProps {
 
 function Card({menproducts} : MenProductsProps) {
 
-    console.log(menproducts)
+    const [ordem, setOrdem] = useState("");
+
+    const handleOrdem = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setOrdem(e.target.value)
+}
+
 
 const Filter = menproducts.map((men : CardProps)=>{
     return (
         <CardContainer>
-                <button>
-                    <div className='image'>
-                        <Image height={300} width={300} alt={men.title} src={men.image}/>
-                    </div>
-                    <h1>{men.title}</h1>
-                    <h2>R$ {men.price}</h2>
-                </button>
+            <button>
+                <div className='image'>
+                    <Image height={300} width={300} alt={men.title} src={men.image}/>
+                </div>
+                <h1>{men.title}</h1>
+                <h2>R$ {men.price}</h2>
+            </button>
         </CardContainer>
         )
     })
 
     return (
-        <div>
+        <MainContainer>
+            <div className='filter'>
+                <input placeholder='Pesquisar'></input>
+                <select>
+                    <option>A-Z</option>
+                    <option>Z-A</option>
+                    <option>Valor 🠕</option>
+                    <option>Valor 🠗</option>
+                </select>
+            </div>
             {Filter}
-        </div>
+        </MainContainer>
     )
 }
 

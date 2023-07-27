@@ -15,10 +15,10 @@ function Header() {
           <Link href="/"><h1>Cactus Company</h1></Link>
         </div>
 
-        <div className='input'>
+        {/* <div className='input'>
           <input placeholder='Buscar'></input>
           <button> <Image alt='buscar' src={SearchIcon}/> </button>
-        </div>
+        </div> */}
 
         <ul>
           <div className='header-images'>

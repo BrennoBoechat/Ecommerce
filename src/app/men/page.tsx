@@ -3,13 +3,14 @@ import { BASE_URL } from '@/constants/urls';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import MenCard from '@/components/men-card/MenCard';
+import { MainContainer } from './styles';
 
 function men() {
 
-  interface Product {
-    title: string
-    image: string;
-  }
+  // interface Product {
+  //   title: string
+  //   image: string;
+  // }
 
   interface MenProductsType {
     title: string,
@@ -19,7 +20,6 @@ function men() {
 
   const [menproducts, setMenProducts] = useState<MenProductsType[]>([]);
 
-  console.log(menproducts)
 
     useEffect(() => {
       axios
@@ -34,11 +34,11 @@ function men() {
     
 
     return (
-      <div>
+      <MainContainer>
         <MenCard
         menproducts = {menproducts}
         />
-      </div>
+      </MainContainer>
     )
   }
 
