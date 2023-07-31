@@ -46,7 +46,7 @@ const Filter = menproducts.map((men : CardProps)=>{
                     <option>Valor 🠗</option>
                 </select>
             </div>
-            {Filter}
+                {Filter}
         </MainContainer>
     )
 }

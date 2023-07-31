@@ -23,7 +23,7 @@ function Header() {
         <ul>
           <div className='header-images'>
             <Link href="/login"><button><Image alt='conta' src={ProfileIcon}/></button></Link>
-            <button><Image alt='carrinho' src={Cart}/></button>
+            <Link href="/cart"><button><Image alt='carrinho' src={Cart}/></button></Link>
           </div>
         </ul>
 

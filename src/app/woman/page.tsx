@@ -3,6 +3,7 @@ import { BASE_URL } from '@/constants/urls';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import WomanCard from '@/components/woman-card/WomanCard';
+import { MainContainerWoman } from './styles';
 
 function male() {
 
@@ -34,11 +35,11 @@ function male() {
     
 
     return (
-      <div>
+      <MainContainerWoman>
         <WomanCard
         womanproducts = {womanproducts}
         />
-      </div>
+      </MainContainerWoman>
     )
   }
 

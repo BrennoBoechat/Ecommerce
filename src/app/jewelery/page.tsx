@@ -3,6 +3,7 @@ import { BASE_URL } from '@/constants/urls';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import JeweleryCard from '@/components/jewelery-card/JeweleryCard';
+import { MainContainerJewelery } from './styles';
 
 function jewelery() {
 
@@ -34,11 +35,11 @@ function jewelery() {
     
 
     return (
-      <div>
+      <MainContainerJewelery>
         <JeweleryCard
         jeweleryproducts = {jeweleryproducts}
         />
-      </div>
+      </MainContainerJewelery>
     )
   }
 

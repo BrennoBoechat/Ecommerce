@@ -15,6 +15,12 @@ export const LoginContainer = styled.div `
             width: 100%;
             height: 60.4vh;
 
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
             h2 {
                 margin-bottom: 30px;
                 color: black;
