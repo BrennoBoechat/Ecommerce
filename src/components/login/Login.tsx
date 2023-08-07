@@ -2,6 +2,7 @@ import React, { FormEvent, useEffect, useState } from 'react'
 import { LoginContainer } from './styles'
 import { useRouter } from 'next/navigation'
 import { api } from '@/services/api';
+import Link from 'next/link';
 
 interface Login {
   username: string,
@@ -52,7 +53,7 @@ function Login() {
 
           <div className='buttons'>
             <button type='submit'>ENTRAR</button>
-            <button className='register'>CRIAR CONTA</button>
+            <Link href="/register"><button className='register'>CRIAR CONTA</button></Link>
           </div>
         </form>
       </div>
