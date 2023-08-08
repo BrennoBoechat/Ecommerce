@@ -37,15 +37,6 @@ const Filter = menproducts.map((men : CardProps)=>{
 
     return (
         <MainContainer>
-            <div className='filter'>
-                <input placeholder='Pesquisar'></input>
-                <select>
-                    <option>A-Z</option>
-                    <option>Z-A</option>
-                    <option>Valor 🠕</option>
-                    <option>Valor 🠗</option>
-                </select>
-            </div>
                 {Filter}
         </MainContainer>
     )
