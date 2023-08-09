@@ -10,8 +10,9 @@ export const RegisterContainer = styled.div `
     .wrap {
         display: flex;
         align-items: center;
+        flex-direction: column;
         justify-content: center;
-        gap: 200px;
+        margin-top: 40px;
 
         input {
             width: 300px;
@@ -26,27 +27,14 @@ export const RegisterContainer = styled.div `
             }
         }
 
-        .person {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .address {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
     }
 
     button {
         background-color: #E0164F;
         height: 47.05px;
-        width: 350px;
+        width: 300px;
         border: none;
         color: white;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 `
