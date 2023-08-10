@@ -16,6 +16,7 @@ function men() {
     title: string,
     image: string,
     price: number,
+    id: number
   }
 
   const [menproducts, setMenProducts] = useState<MenProductsType[]>([]);

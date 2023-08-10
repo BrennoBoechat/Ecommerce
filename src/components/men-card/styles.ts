@@ -1,19 +1,29 @@
-import styled from "styled-components" 
+import styled from "styled-components"
 
-export const CardContainer = styled.div `
+export const CardContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 
-        button {
+        .container {
             display: flex;
             background-color: transparent;
             border: none;
             flex-direction: column;
             align-items: center;
-            margin: 50px;
+            margin: 80px;
             width: 30vw;
+
+            button {
+                background-color: #E0164F;
+                height: 40px;
+                width: 200px;
+                border: none;
+                color: white;
+                margin-top: 20px;
+                font-size: 20px;
+            }
 
             .image {
                 :hover {
