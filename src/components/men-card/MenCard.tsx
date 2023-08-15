@@ -31,7 +31,7 @@ function Card({ menproducts }: MenProductsProps) {
 
     const handleClick = (id: number) => {
         setIdProduct(id)
-        router.push("/detail")
+        router.push(`/detail/${id}`)
     }
 
 
